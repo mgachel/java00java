@@ -13,7 +13,7 @@ public class Main {
         
         while (true) {
             InputUtils.printMainMenu();
-            int choice = InputUtils.getInt(scanner, "🎯 Enter your choice:", 0, 3);
+            int choice = InputUtils.getInt(scanner, "Enter your choice:", 0, 3);
             
             switch (choice) {
                 case 0:
@@ -37,7 +37,7 @@ public class Main {
     private static void handleSearchingMenu() {
         while (true) {
             InputUtils.printSearchingMenu();
-            int choice = InputUtils.getInt(scanner, "🔍 Choose a searching algorithm:", 0, 5);
+            int choice = InputUtils.getInt(scanner, "Choose a searching algorithm:", 0, 5);
             
             if (choice == 0) {
                 break; // Return to main menu
@@ -46,23 +46,23 @@ public class Main {
             System.out.println("\n" + "=".repeat(50));
             switch (choice) {
                 case 1:
-                    System.out.println("🚀 Starting Linear Search...");
+                    System.out.println("Starting Linear Search...");
                     new LinearSearch().run(scanner);
                     break;
                 case 2:
-                    System.out.println("🚀 Starting Binary Search...");
+                    System.out.println("Starting Binary Search...");
                     new BinarySearch().run(scanner);
                     break;
                 case 3:
-                    System.out.println("🚀 Starting Jump Search...");
+                    System.out.println("Starting Jump Search...");
                     new JumpSearch().run(scanner);
                     break;
                 case 4:
-                    System.out.println("🚀 Starting Interpolation Search...");
+                    System.out.println("Starting Interpolation Search...");
                     new InterpolationSearch().run(scanner);
                     break;
                 case 5:
-                    System.out.println("🚀 Starting Exponential Search...");
+                    System.out.println("Starting Exponential Search...");
                     new ExponentialSearch().run(scanner);
                     break;
                 default:
@@ -81,7 +81,7 @@ public class Main {
     private static void handleSortingMenu() {
         while (true) {
             InputUtils.printSortingMenu();
-            int choice = InputUtils.getInt(scanner, "🗂️ Choose a sorting algorithm:", 0, 8);
+            int choice = InputUtils.getInt(scanner, "Choose a sorting algorithm:", 0, 8);
             
             if (choice == 0) {
                 break; // Return to main menu
@@ -90,35 +90,35 @@ public class Main {
             System.out.println("\n" + "=".repeat(50));
             switch (choice) {
                 case 1:
-                    System.out.println("🚀 Starting Bubble Sort...");
+                    System.out.println("Starting Bubble Sort...");
                     new BubbleSort().run(scanner);
                     break;
                 case 2:
-                    System.out.println("🚀 Starting Selection Sort...");
+                    System.out.println("Starting Selection Sort...");
                     new SelectionSort().run(scanner);
                     break;
                 case 3:
-                    System.out.println("🚀 Starting Insertion Sort...");
+                    System.out.println("Starting Insertion Sort...");
                     new InsertionSort().run(scanner);
                     break;
                 case 4:
-                    System.out.println("🚀 Starting Merge Sort...");
+                    System.out.println("Starting Merge Sort...");
                     new MergeSort().run(scanner);
                     break;
                 case 5:
-                    System.out.println("🚀 Starting Quick Sort...");
+                    System.out.println("Starting Quick Sort...");
                     new QuickSort().run(scanner);
                     break;
                 case 6:
-                    System.out.println("🚀 Starting Heap Sort...");
+                    System.out.println("Starting Heap Sort...");
                     new HeapSort().run(scanner);
                     break;
                 case 7:
-                    System.out.println("🚀 Starting Radix Sort...");
+                    System.out.println("Starting Radix Sort...");
                     new RadixSort().run(scanner);
                     break;
                 case 8:
-                    System.out.println("🚀 Starting Shell Sort...");
+                    System.out.println("Starting Shell Sort...");
                     new ShellSort().run(scanner);
                     break;
                 default:
